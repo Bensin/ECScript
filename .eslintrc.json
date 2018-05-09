@@ -1,0 +1,38 @@
+{
+    "env": {
+        "node": true,
+        "commonjs": true,
+        "es6": true,
+        "mocha": true
+    },
+    "extends": ["eslint:recommended", "plugin:security/recommended"],
+    "parserOptions": {
+        "ecmaVersion": 2017,
+        "sourceType": "module"
+    },
+    "globals": {
+        "process": true
+    },
+    "plugins": ["mocha", "security"],
+    "rules": {
+        "no-console": "warn",
+        "no-unused-vars": "warn",
+        "indent": [
+            "error",
+            4
+        ],
+        "linebreak-style": [
+            "error",
+            "unix"
+        ],
+        "quotes": [
+            "error",
+            "double"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "mocha/no-exclusive-tests": "error"
+    }
+}
