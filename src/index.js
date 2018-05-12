@@ -1,6 +1,11 @@
 import express from "express";
 import { Bork } from "./bork";
+
+import mongoose from 'mongoose';
+
 const app = express();
+
+const mong  = mongoose.connect();
 
 app.get("/", (req, res) => res.send("Hello World!"));
 
